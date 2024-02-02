@@ -1,0 +1,16 @@
+Instrument:
+  hardware: {}
+  lock_in:
+    lock_in_data_flip_number: -1.0
+  sample_bias:
+    bias:
+      unit: V
+      value: 20.0
+  stm_head_temp:
+    unit: K
+    value: 50.0
+definition: NXiv_sweep2
+resolution_indicators: {}
+sample:
+  sample_prep_descripton: Here is the sample preparation.
+type: background

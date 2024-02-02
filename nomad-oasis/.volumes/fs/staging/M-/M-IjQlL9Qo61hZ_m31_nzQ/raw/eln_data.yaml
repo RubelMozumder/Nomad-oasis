@@ -1,0 +1,49 @@
+Instrument:
+  Environment:
+    current_sensor:
+      current:
+        unit: A
+        value: -5.3429e-15
+    position: {}
+    scan_control:
+      circuit:
+        channels_current:
+          unit: A
+          value: LI Demod 2 X (A);LI Demod 2 Y (A);LI Demod 1 X (A);LI Demod 1 Y (A)
+      roi: {}
+    sweep_control: {}
+  current_amplifier: {}
+  hardware:
+    name: Nanonis BP5e
+  lock_in:
+    lock_in_data_flip_number: -1.0
+    modulation_frequency:
+      unit: Hz
+      value: 973.0
+    status: 'ON'
+  piezo_config:
+    active_calib: LHe
+  sample_bias:
+    bias:
+      unit: V
+      value: 0.1
+    bias_calibration: 1.0
+    bias_offset:
+      unit: V
+      value: '0'
+  software:
+    rt_release: '10771'
+    ui_release: '10771'
+    version: "Generic 5e\t"
+  stm_head_temp:
+    unit: K
+    value: 4.92997
+collection_identifier: 221122_Au_5K
+definition: NXsts
+entry_identifier: 221122_Au_5K00014
+experiment_description: 'bias spectroscopy: SYNC & Filter LP 8order WITHDRAW             600
+  steps, locked Au(111), 50pA, 100 mV set point, 1mV DCA, 973Hz,138             1st
+  H, -84 2nd H'
+experiment_identifier: C:\Users\SPM-PEEM\Desktop\DATA_Nanonis\20220711_CreaTec_Service_Benchmarks_LHe\Nanonis-Session-PMD100-HVHU_CreaTec_Service_PalmaLabBerlin220711
+experiment_type: sts
+type: background

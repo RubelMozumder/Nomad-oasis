@@ -1,0 +1,1 @@
+{"data":{"m_def":"nomad.datamodel.metainfo.eln.nexus_data_converter.NexusDataConverter","input_files":["Nanonis_Eln.yaml","config_file_for_dat.json","STS_Example_file_1.dat"],"reader":"stm","nxdl":"NXiv_sweep2"}}

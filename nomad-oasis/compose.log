@@ -1,0 +1,649 @@
+ Network nomad_oasis_network  Creating
+ Network nomad_oasis_network  Created
+ Container nomad_oasis_rabbitmq  Creating
+ Container nomad_oasis_north  Creating
+ Container nomad_oasis_elastic  Creating
+ Container nomad_oasis_mongo  Creating
+ Container nomad_oasis_rabbitmq  Created
+ Container nomad_oasis_north  Created
+ Container nomad_oasis_elastic  Created
+ Container nomad_oasis_mongo  Created
+ Container nomad_oasis_worker  Creating
+ Container nomad_oasis_app  Creating
+ Container nomad_oasis_worker  Created
+ Container nomad_oasis_app  Created
+ Container nomad_oasis_proxy  Creating
+ Container nomad_oasis_proxy  Created
+Attaching to nomad_oasis_app, nomad_oasis_elastic, nomad_oasis_mongo, nomad_oasis_north, nomad_oasis_proxy, nomad_oasis_rabbitmq, nomad_oasis_worker
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:15.840743+00:00 [warning] <0.132.0> Overriding Erlang cookie using the value set in the environment
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:16.968767+00:00 [notice] <0.44.0> Application syslog exited with reason: stopped
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:16.968873+00:00 [notice] <0.229.0> Logging: switching to configured handler(s); following messages may not be visible in this log output
+nomad_oasis_rabbitmq  | [38;5;87m2023-12-26 16:20:16.978999+00:00 [notice] <0.229.0> Logging: configured log handlers are now ACTIVE[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:17.134065+00:00 [info] <0.229.0> ra: starting system quorum_queues[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:17.134262+00:00 [info] <0.229.0> starting Ra system: quorum_queues in directory: /var/lib/rabbitmq/mnesia/rabbit@6aeae7812dc7/quorum/rabbit@6aeae7812dc7[0m
+nomad_oasis_north     | [I 2023-12-26 16:20:17.173 JupyterHub app:2459] Running JupyterHub version 1.4.2
+nomad_oasis_north     | [I 2023-12-26 16:20:17.173 JupyterHub app:2489] Using Authenticator: oauthenticator.generic.GenericOAuthenticator-15.1.0
+nomad_oasis_north     | [I 2023-12-26 16:20:17.173 JupyterHub app:2489] Using Spawner: builtins.DockerSpawnerWithWindowsFixes
+nomad_oasis_north     | [I 2023-12-26 16:20:17.173 JupyterHub app:2489] Using Proxy: jupyterhub.proxy.ConfigurableHTTPProxy-1.4.2
+nomad_oasis_north     | [I 2023-12-26 16:20:17.176 JupyterHub app:1579] Writing cookie_secret to /app/jupyterhub_cookie_secret
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:17.190480+00:00 [info] <0.265.0> ra system 'quorum_queues' running pre init for 0 registered servers[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:17.199987+00:00 [info] <0.266.0> ra: meta data store initialised for system quorum_queues. 0 record(s) recovered[0m
+nomad_oasis_north     | [I 2023-12-26 16:20:17.204 alembic.runtime.migration migration:205] Context impl SQLiteImpl.
+nomad_oasis_north     | [I 2023-12-26 16:20:17.204 alembic.runtime.migration migration:208] Will assume non-transactional DDL.
+nomad_oasis_rabbitmq  | [38;5;87m2023-12-26 16:20:17.212584+00:00 [notice] <0.271.0> WAL: ra_log_wal init, open tbls: ra_log_open_mem_tables, closed tbls: ra_log_closed_mem_tables[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:17.226277+00:00 [info] <0.229.0> ra: starting system coordination[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:17.226397+00:00 [info] <0.229.0> starting Ra system: coordination in directory: /var/lib/rabbitmq/mnesia/rabbit@6aeae7812dc7/coordination/rabbit@6aeae7812dc7[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:17.228243+00:00 [info] <0.278.0> ra system 'coordination' running pre init for 0 registered servers[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:17.229053+00:00 [info] <0.279.0> ra: meta data store initialised for system coordination. 0 record(s) recovered[0m
+nomad_oasis_rabbitmq  | [38;5;87m2023-12-26 16:20:17.229321+00:00 [notice] <0.284.0> WAL: ra_coordination_log_wal init, open tbls: ra_coordination_log_open_mem_tables, closed tbls: ra_coordination_log_closed_mem_tables[0m
+nomad_oasis_north     | [I 2023-12-26 16:20:17.231 alembic.runtime.migration migration:619] Running stamp_revision  -> 4dc2d5a8c53c
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:17.235435+00:00 [info] <0.229.0> [0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:17.235435+00:00 [info] <0.229.0>  Starting RabbitMQ 3.11.5 on Erlang 25.2 [jit][0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:17.235435+00:00 [info] <0.229.0>  Copyright (c) 2007-2022 VMware, Inc. or its affiliates.[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:17.235435+00:00 [info] <0.229.0>  Licensed under the MPL 2.0. Website: https://rabbitmq.com[0m
+nomad_oasis_rabbitmq  | 
+nomad_oasis_rabbitmq  |   ##  ##      RabbitMQ 3.11.5
+nomad_oasis_rabbitmq  |   ##  ##
+nomad_oasis_rabbitmq  |   ##########  Copyright (c) 2007-2022 VMware, Inc. or its affiliates.
+nomad_oasis_rabbitmq  |   ######  ##
+nomad_oasis_rabbitmq  |   ##########  Licensed under the MPL 2.0. Website: https://rabbitmq.com
+nomad_oasis_rabbitmq  | 
+nomad_oasis_rabbitmq  |   Erlang:      25.2 [jit]
+nomad_oasis_rabbitmq  |   TLS Library: OpenSSL - OpenSSL 1.1.1s  1 Nov 2022
+nomad_oasis_rabbitmq  |   Release series support status: supported
+nomad_oasis_rabbitmq  | 
+nomad_oasis_rabbitmq  |   Doc guides:  https://rabbitmq.com/documentation.html
+nomad_oasis_rabbitmq  |   Support:     https://rabbitmq.com/contact.html
+nomad_oasis_rabbitmq  |   Tutorials:   https://rabbitmq.com/getstarted.html
+nomad_oasis_rabbitmq  |   Monitoring:  https://rabbitmq.com/monitoring.html
+nomad_oasis_rabbitmq  | 
+nomad_oasis_rabbitmq  |   Logs: /var/log/rabbitmq/rabbit@6aeae7812dc7_upgrade.log
+nomad_oasis_rabbitmq  |         <stdout>
+nomad_oasis_rabbitmq  | 
+nomad_oasis_rabbitmq  |   Config file(s): /etc/rabbitmq/conf.d/10-defaults.conf
+nomad_oasis_rabbitmq  |                   /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
+nomad_oasis_rabbitmq  | 
+nomad_oasis_rabbitmq  |   Starting broker...2023-12-26 16:20:17.236975+00:00 [info] <0.229.0> [0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:17.236975+00:00 [info] <0.229.0>  node           : rabbit@6aeae7812dc7[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:17.236975+00:00 [info] <0.229.0>  home dir       : /var/lib/rabbitmq[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:17.236975+00:00 [info] <0.229.0>  config file(s) : /etc/rabbitmq/conf.d/10-defaults.conf[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:17.236975+00:00 [info] <0.229.0>                 : /etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:17.236975+00:00 [info] <0.229.0>  cookie hash    : P6euPuJ+9iKMq+WqGJEzBA==[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:17.236975+00:00 [info] <0.229.0>  log(s)         : /var/log/rabbitmq/rabbit@6aeae7812dc7_upgrade.log[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:17.236975+00:00 [info] <0.229.0>                 : <stdout>[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:17.236975+00:00 [info] <0.229.0>  database dir   : /var/lib/rabbitmq/mnesia/rabbit@6aeae7812dc7[0m
+nomad_oasis_north     | [I 2023-12-26 16:20:17.413 JupyterHub proxy:497] Generating new CONFIGPROXY_AUTH_TOKEN
+nomad_oasis_north     | [W 2023-12-26 16:20:17.415 JupyterHub app:1808] No admin users, admin interface will be unavailable.
+nomad_oasis_north     | [W 2023-12-26 16:20:17.416 JupyterHub app:1809] Add any administrative users to `c.Authenticator.admin_users` in config.
+nomad_oasis_north     | [I 2023-12-26 16:20:17.416 JupyterHub app:1838] Not using allowed_users. Any authenticated user will be allowed.
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:17,430Z", "level": "INFO", "component": "o.e.n.Node", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "version[7.17.1], pid[7], build[default/docker/e5acb99f822233d62d6444ce45a4543dc1c8059a/2022-02-23T22:20:54.153567231Z], OS[Linux/6.5.11-linuxkit/amd64], JVM[Eclipse Adoptium/OpenJDK 64-Bit Server VM/17.0.2/17.0.2+8]" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:17,436Z", "level": "INFO", "component": "o.e.n.Node", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "JVM home [/usr/share/elasticsearch/jdk], using bundled JDK [true]" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:17,437Z", "level": "INFO", "component": "o.e.n.Node", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "JVM arguments [-Xshare:auto, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -XX:+ShowCodeDetailsInExceptionMessages, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Dlog4j2.formatMsgNoLookups=true, -Djava.locale.providers=SPI,COMPAT, --add-opens=java.base/java.io=ALL-UNNAMED, -XX:+UseG1GC, -Djava.io.tmpdir=/tmp/elasticsearch-18096994177854297073, -XX:+HeapDumpOnOutOfMemoryError, -XX:+ExitOnOutOfMemoryError, -XX:HeapDumpPath=data, -XX:ErrorFile=logs/hs_err_pid%p.log, -Xlog:gc*,gc+age=trace,safepoint:file=logs/gc.log:utctime,pid,tags:filecount=32,filesize=64m, -Des.cgroups.hierarchy.override=/, -Xms512m, -Xmx512m, -XX:MaxDirectMemorySize=268435456, -XX:G1HeapRegionSize=4m, -XX:InitiatingHeapOccupancyPercent=30, -XX:G1ReservePercent=15, -Des.path.home=/usr/share/elasticsearch, -Des.path.conf=/usr/share/elasticsearch/config, -Des.distribution.flavor=default, -Des.distribution.type=docker, -Des.bundled_jdk=true]" }
+nomad_oasis_north     | [I 2023-12-26 16:20:17.480 JupyterHub app:1961] Adding API token for service: nomad-service
+nomad_oasis_north     | [I 2023-12-26 16:20:17.510 JupyterHub app:2526] Initialized 0 spawners in 0.002 seconds
+nomad_oasis_north     | [W 2023-12-26 16:20:17.514 JupyterHub proxy:699] Running JupyterHub without SSL.  I hope there is SSL termination happening somewhere else...
+nomad_oasis_north     | [I 2023-12-26 16:20:17.514 JupyterHub proxy:703] Starting proxy @ http://:9000/nomad-oasis/north
+nomad_oasis_north     | 16:20:17.860 [ConfigProxy] [32minfo[39m: Proxying http://*:9000 to (no default)
+nomad_oasis_north     | 16:20:17.864 [ConfigProxy] [32minfo[39m: Proxy API at http://127.0.0.1:8001/api/routes
+nomad_oasis_north     | 16:20:18.077 [ConfigProxy] [32minfo[39m: 200 GET /api/routes 
+nomad_oasis_north     | [I 2023-12-26 16:20:18.079 JupyterHub app:2774] Hub API listening on http://0.0.0.0:8081/nomad-oasis/north/hub/
+nomad_oasis_north     | [I 2023-12-26 16:20:18.080 JupyterHub app:2776] Private Hub API connect url http://north:8081/nomad-oasis/north/hub/
+nomad_oasis_north     | [I 2023-12-26 16:20:18.080 JupyterHub app:2798] Adding external service nomad-service
+nomad_oasis_north     | 16:20:18.084 [ConfigProxy] [32minfo[39m: 200 GET /api/routes 
+nomad_oasis_north     | [I 2023-12-26 16:20:18.084 JupyterHub proxy:347] Checking routes
+nomad_oasis_north     | [I 2023-12-26 16:20:18.084 JupyterHub proxy:432] Adding route for Hub: /nomad-oasis/north/ => http://north:8081
+nomad_oasis_north     | 16:20:18.088 [ConfigProxy] [32minfo[39m: Adding route /nomad-oasis/north -> http://north:8081
+nomad_oasis_north     | 16:20:18.090 [ConfigProxy] [32minfo[39m: Route added /nomad-oasis/north -> http://north:8081
+nomad_oasis_north     | 16:20:18.092 [ConfigProxy] [32minfo[39m: 201 POST /api/routes/nomad-oasis/north 
+nomad_oasis_north     | [I 2023-12-26 16:20:18.095 JupyterHub app:2849] JupyterHub is now running at http://:9000/nomad-oasis/north
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:19,429Z", "level": "INFO", "component": "o.e.p.PluginsService", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "loaded module [aggs-matrix-stats]" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:19,430Z", "level": "INFO", "component": "o.e.p.PluginsService", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "loaded module [analysis-common]" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:19,430Z", "level": "INFO", "component": "o.e.p.PluginsService", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "loaded module [constant-keyword]" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:19,430Z", "level": "INFO", "component": "o.e.p.PluginsService", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "loaded module [frozen-indices]" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:19,430Z", "level": "INFO", "component": "o.e.p.PluginsService", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "loaded module [ingest-common]" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:19,430Z", "level": "INFO", "component": "o.e.p.PluginsService", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "loaded module [ingest-geoip]" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:19,430Z", "level": "INFO", "component": "o.e.p.PluginsService", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "loaded module [ingest-user-agent]" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:19,431Z", "level": "INFO", "component": "o.e.p.PluginsService", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "loaded module [kibana]" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:19,431Z", "level": "INFO", "component": "o.e.p.PluginsService", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "loaded module [lang-expression]" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:19,431Z", "level": "INFO", "component": "o.e.p.PluginsService", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "loaded module [lang-mustache]" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:19,431Z", "level": "INFO", "component": "o.e.p.PluginsService", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "loaded module [lang-painless]" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:19,431Z", "level": "INFO", "component": "o.e.p.PluginsService", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "loaded module [legacy-geo]" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:19,431Z", "level": "INFO", "component": "o.e.p.PluginsService", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "loaded module [mapper-extras]" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:19,431Z", "level": "INFO", "component": "o.e.p.PluginsService", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "loaded module [mapper-version]" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:19,431Z", "level": "INFO", "component": "o.e.p.PluginsService", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "loaded module [parent-join]" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:19,431Z", "level": "INFO", "component": "o.e.p.PluginsService", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "loaded module [percolator]" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:19,432Z", "level": "INFO", "component": "o.e.p.PluginsService", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "loaded module [rank-eval]" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:19,432Z", "level": "INFO", "component": "o.e.p.PluginsService", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "loaded module [reindex]" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:19,432Z", "level": "INFO", "component": "o.e.p.PluginsService", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "loaded module [repositories-metering-api]" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:19,432Z", "level": "INFO", "component": "o.e.p.PluginsService", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "loaded module [repository-encrypted]" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:19,432Z", "level": "INFO", "component": "o.e.p.PluginsService", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "loaded module [repository-url]" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:19,432Z", "level": "INFO", "component": "o.e.p.PluginsService", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "loaded module [runtime-fields-common]" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:19,432Z", "level": "INFO", "component": "o.e.p.PluginsService", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "loaded module [search-business-rules]" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:19,433Z", "level": "INFO", "component": "o.e.p.PluginsService", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "loaded module [searchable-snapshots]" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:19,433Z", "level": "INFO", "component": "o.e.p.PluginsService", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "loaded module [snapshot-repo-test-kit]" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:19,433Z", "level": "INFO", "component": "o.e.p.PluginsService", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "loaded module [spatial]" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:19,433Z", "level": "INFO", "component": "o.e.p.PluginsService", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "loaded module [transform]" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:19,433Z", "level": "INFO", "component": "o.e.p.PluginsService", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "loaded module [transport-netty4]" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:19,433Z", "level": "INFO", "component": "o.e.p.PluginsService", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "loaded module [unsigned-long]" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:19,433Z", "level": "INFO", "component": "o.e.p.PluginsService", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "loaded module [vector-tile]" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:19,433Z", "level": "INFO", "component": "o.e.p.PluginsService", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "loaded module [vectors]" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:19,433Z", "level": "INFO", "component": "o.e.p.PluginsService", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "loaded module [wildcard]" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:19,434Z", "level": "INFO", "component": "o.e.p.PluginsService", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "loaded module [x-pack-aggregate-metric]" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:19,434Z", "level": "INFO", "component": "o.e.p.PluginsService", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "loaded module [x-pack-analytics]" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:19,434Z", "level": "INFO", "component": "o.e.p.PluginsService", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "loaded module [x-pack-async]" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:19,434Z", "level": "INFO", "component": "o.e.p.PluginsService", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "loaded module [x-pack-async-search]" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:19,434Z", "level": "INFO", "component": "o.e.p.PluginsService", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "loaded module [x-pack-autoscaling]" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:19,434Z", "level": "INFO", "component": "o.e.p.PluginsService", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "loaded module [x-pack-ccr]" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:19,434Z", "level": "INFO", "component": "o.e.p.PluginsService", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "loaded module [x-pack-core]" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:19,434Z", "level": "INFO", "component": "o.e.p.PluginsService", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "loaded module [x-pack-data-streams]" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:19,434Z", "level": "INFO", "component": "o.e.p.PluginsService", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "loaded module [x-pack-deprecation]" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:19,434Z", "level": "INFO", "component": "o.e.p.PluginsService", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "loaded module [x-pack-enrich]" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:19,434Z", "level": "INFO", "component": "o.e.p.PluginsService", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "loaded module [x-pack-eql]" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:19,435Z", "level": "INFO", "component": "o.e.p.PluginsService", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "loaded module [x-pack-fleet]" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:19,435Z", "level": "INFO", "component": "o.e.p.PluginsService", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "loaded module [x-pack-graph]" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:19,435Z", "level": "INFO", "component": "o.e.p.PluginsService", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "loaded module [x-pack-identity-provider]" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:19,435Z", "level": "INFO", "component": "o.e.p.PluginsService", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "loaded module [x-pack-ilm]" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:19,435Z", "level": "INFO", "component": "o.e.p.PluginsService", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "loaded module [x-pack-logstash]" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:19,435Z", "level": "INFO", "component": "o.e.p.PluginsService", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "loaded module [x-pack-ml]" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:19,435Z", "level": "INFO", "component": "o.e.p.PluginsService", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "loaded module [x-pack-monitoring]" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:19,435Z", "level": "INFO", "component": "o.e.p.PluginsService", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "loaded module [x-pack-ql]" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:19,435Z", "level": "INFO", "component": "o.e.p.PluginsService", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "loaded module [x-pack-rollup]" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:19,435Z", "level": "INFO", "component": "o.e.p.PluginsService", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "loaded module [x-pack-security]" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:19,436Z", "level": "INFO", "component": "o.e.p.PluginsService", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "loaded module [x-pack-shutdown]" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:19,436Z", "level": "INFO", "component": "o.e.p.PluginsService", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "loaded module [x-pack-sql]" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:19,436Z", "level": "INFO", "component": "o.e.p.PluginsService", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "loaded module [x-pack-stack]" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:19,436Z", "level": "INFO", "component": "o.e.p.PluginsService", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "loaded module [x-pack-text-structure]" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:19,436Z", "level": "INFO", "component": "o.e.p.PluginsService", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "loaded module [x-pack-voting-only-node]" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:19,436Z", "level": "INFO", "component": "o.e.p.PluginsService", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "loaded module [x-pack-watcher]" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:19,437Z", "level": "INFO", "component": "o.e.p.PluginsService", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "no plugins loaded" }
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.441707+00:00 [info] <0.229.0> Running boot step pre_boot defined by app rabbit[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.441788+00:00 [info] <0.229.0> Running boot step rabbit_global_counters defined by app rabbit[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.442009+00:00 [info] <0.229.0> Running boot step rabbit_osiris_metrics defined by app rabbit[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.442138+00:00 [info] <0.229.0> Running boot step rabbit_core_metrics defined by app rabbit[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.442780+00:00 [info] <0.229.0> Running boot step rabbit_alarm defined by app rabbit[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.445816+00:00 [info] <0.299.0> Memory high watermark set to 1498 MiB (1571145318 bytes) of 3745 MiB (3927863296 bytes) total[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.448981+00:00 [info] <0.301.0> Enabling free disk space monitoring (disk free space: 44710178816, total memory: 3927863296)[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.449207+00:00 [info] <0.301.0> Disk free limit set to 50MB[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.451506+00:00 [info] <0.229.0> Running boot step code_server_cache defined by app rabbit[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.451734+00:00 [info] <0.229.0> Running boot step file_handle_cache defined by app rabbit[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.452118+00:00 [info] <0.304.0> Limiting to approx 1048479 file handles (943629 sockets)[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.452340+00:00 [info] <0.305.0> FHC read buffering: OFF[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.452407+00:00 [info] <0.305.0> FHC write buffering: ON[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.453025+00:00 [info] <0.229.0> Running boot step worker_pool defined by app rabbit[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.453134+00:00 [info] <0.286.0> Will use 12 processes for default worker pool[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.453183+00:00 [info] <0.286.0> Starting worker pool 'worker_pool' with 12 processes in it[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.453821+00:00 [info] <0.229.0> Running boot step database defined by app rabbit[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.454551+00:00 [info] <0.229.0> Node database directory at /var/lib/rabbitmq/mnesia/rabbit@6aeae7812dc7 is empty. Assuming we need to join an existing cluster or initialise from scratch...[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.454611+00:00 [info] <0.229.0> Configured peer discovery backend: rabbit_peer_discovery_classic_config[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.454632+00:00 [info] <0.229.0> Will try to lock with peer discovery backend rabbit_peer_discovery_classic_config[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.454669+00:00 [info] <0.229.0> All discovered existing cluster peers:[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.454679+00:00 [info] <0.229.0> Discovered no peer nodes to cluster with. Some discovery backends can filter nodes out based on a readiness criteria. Enabling debug logging might help troubleshoot.[0m
+nomad_oasis_rabbitmq  | [38;5;87m2023-12-26 16:20:19.456467+00:00 [notice] <0.44.0> Application mnesia exited with reason: stopped[0m
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:19,471Z", "level": "INFO", "component": "o.e.e.NodeEnvironment", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "using [1] data paths, mounts [[/usr/share/elasticsearch/data (/dev/vda1)]], net usable_space [41.6gb], net total_space [62.6gb], types [ext4]" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:19,472Z", "level": "INFO", "component": "o.e.e.NodeEnvironment", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "heap size [512mb], compressed ordinary object pointers [true]" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:19,522Z", "level": "INFO", "component": "o.e.n.Node", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "node name [7833ef70e1d5], node ID [ZewW-DK8TGi75YDKJH6l0w], cluster name [docker-cluster], roles [transform, data_frozen, master, remote_cluster_client, data, ml, data_content, data_hot, data_warm, data_cold, ingest]" }
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.594738+00:00 [info] <0.229.0> Waiting for Mnesia tables for 30000 ms, 9 retries left[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.594916+00:00 [info] <0.229.0> Successfully synced tables from a peer[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.609291+00:00 [info] <0.229.0> Feature flags: `feature_flags_v2`: supported, attempt to enable...[0m
+nomad_oasis_rabbitmq  | [38;5;87m2023-12-26 16:20:19.634558+00:00 [notice] <0.287.0> Feature flags: attempt to enable `classic_mirrored_queue_version`...[0m
+nomad_oasis_rabbitmq  | [38;5;87m2023-12-26 16:20:19.659207+00:00 [notice] <0.287.0> Feature flags: `classic_mirrored_queue_version` enabled[0m
+nomad_oasis_rabbitmq  | [38;5;87m2023-12-26 16:20:19.659767+00:00 [notice] <0.287.0> Feature flags: attempt to enable `classic_queue_type_delivery_support`...[0m
+nomad_oasis_rabbitmq  | [38;5;87m2023-12-26 16:20:19.672340+00:00 [notice] <0.287.0> Feature flags: attempt to enable `stream_queue`...[0m
+nomad_oasis_rabbitmq  | [38;5;87m2023-12-26 16:20:19.694895+00:00 [notice] <0.287.0> Feature flags: `stream_queue` enabled[0m
+nomad_oasis_rabbitmq  | [38;5;87m2023-12-26 16:20:19.709286+00:00 [notice] <0.287.0> Feature flags: `classic_queue_type_delivery_support` enabled[0m
+nomad_oasis_rabbitmq  | [38;5;87m2023-12-26 16:20:19.709772+00:00 [notice] <0.287.0> Feature flags: attempt to enable `direct_exchange_routing_v2`...[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.718326+00:00 [info] <0.506.0> Waiting for Mnesia tables for 30000 ms, 9 retries left[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.718525+00:00 [info] <0.506.0> Successfully synced tables from a peer[0m
+nomad_oasis_rabbitmq  | [38;5;87m2023-12-26 16:20:19.742892+00:00 [notice] <0.287.0> Feature flags: `direct_exchange_routing_v2` enabled[0m
+nomad_oasis_rabbitmq  | [38;5;87m2023-12-26 16:20:19.743353+00:00 [notice] <0.287.0> Feature flags: attempt to enable `drop_unroutable_metric`...[0m
+nomad_oasis_rabbitmq  | [38;5;87m2023-12-26 16:20:19.762318+00:00 [notice] <0.287.0> Feature flags: `drop_unroutable_metric` enabled[0m
+nomad_oasis_rabbitmq  | [38;5;87m2023-12-26 16:20:19.762621+00:00 [notice] <0.287.0> Feature flags: attempt to enable `empty_basic_get_metric`...[0m
+nomad_oasis_rabbitmq  | [38;5;87m2023-12-26 16:20:19.781962+00:00 [notice] <0.287.0> Feature flags: `empty_basic_get_metric` enabled[0m
+nomad_oasis_rabbitmq  | [38;5;87m2023-12-26 16:20:19.782712+00:00 [notice] <0.287.0> Feature flags: attempt to enable `listener_records_in_ets`...[0m
+nomad_oasis_rabbitmq  | [38;5;87m2023-12-26 16:20:19.819446+00:00 [notice] <0.287.0> Feature flags: `listener_records_in_ets` enabled[0m
+nomad_oasis_rabbitmq  | [38;5;87m2023-12-26 16:20:19.820366+00:00 [notice] <0.287.0> Feature flags: attempt to enable `stream_single_active_consumer`...[0m
+nomad_oasis_rabbitmq  | [38;5;87m2023-12-26 16:20:19.843711+00:00 [notice] <0.287.0> Feature flags: `stream_single_active_consumer` enabled[0m
+nomad_oasis_rabbitmq  | [38;5;87m2023-12-26 16:20:19.844183+00:00 [notice] <0.287.0> Feature flags: attempt to enable `tracking_records_in_ets`...[0m
+nomad_oasis_rabbitmq  | [38;5;87m2023-12-26 16:20:19.868685+00:00 [notice] <0.287.0> Feature flags: `tracking_records_in_ets` enabled[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.869426+00:00 [info] <0.229.0> Waiting for Mnesia tables for 30000 ms, 9 retries left[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.869605+00:00 [info] <0.229.0> Successfully synced tables from a peer[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.885232+00:00 [info] <0.229.0> Waiting for Mnesia tables for 30000 ms, 9 retries left[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.885395+00:00 [info] <0.229.0> Successfully synced tables from a peer[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.885432+00:00 [info] <0.229.0> Peer discovery backend rabbit_peer_discovery_classic_config does not support registration, skipping registration.[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.885469+00:00 [info] <0.229.0> Will try to unlock with peer discovery backend rabbit_peer_discovery_classic_config[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.885532+00:00 [info] <0.229.0> Running boot step tracking_metadata_store defined by app rabbit[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.885604+00:00 [info] <0.628.0> Setting up a table for connection tracking on this node: tracked_connection[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.885687+00:00 [info] <0.628.0> Setting up a table for per-vhost connection counting on this node: tracked_connection_per_vhost[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.885772+00:00 [info] <0.628.0> Setting up a table for per-user connection counting on this node: tracked_connection_per_user[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.885855+00:00 [info] <0.628.0> Setting up a table for channel tracking on this node: tracked_channel[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.885921+00:00 [info] <0.628.0> Setting up a table for channel tracking on this node: tracked_channel_per_user[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.886058+00:00 [info] <0.229.0> Running boot step networking_metadata_store defined by app rabbit[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.886422+00:00 [info] <0.229.0> Running boot step database_sync defined by app rabbit[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.886556+00:00 [info] <0.229.0> Running boot step feature_flags defined by app rabbit[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.886734+00:00 [info] <0.229.0> Running boot step codec_correctness_check defined by app rabbit[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.886805+00:00 [info] <0.229.0> Running boot step external_infrastructure defined by app rabbit[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.886833+00:00 [info] <0.229.0> Running boot step rabbit_event defined by app rabbit[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.887007+00:00 [info] <0.229.0> Running boot step rabbit_registry defined by app rabbit[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.887101+00:00 [info] <0.229.0> Running boot step rabbit_auth_mechanism_amqplain defined by app rabbit[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.887193+00:00 [info] <0.229.0> Running boot step rabbit_auth_mechanism_cr_demo defined by app rabbit[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.887257+00:00 [info] <0.229.0> Running boot step rabbit_auth_mechanism_plain defined by app rabbit[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.887332+00:00 [info] <0.229.0> Running boot step rabbit_exchange_type_direct defined by app rabbit[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.887426+00:00 [info] <0.229.0> Running boot step rabbit_exchange_type_fanout defined by app rabbit[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.887486+00:00 [info] <0.229.0> Running boot step rabbit_exchange_type_headers defined by app rabbit[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.887548+00:00 [info] <0.229.0> Running boot step rabbit_exchange_type_topic defined by app rabbit[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.887642+00:00 [info] <0.229.0> Running boot step rabbit_mirror_queue_mode_all defined by app rabbit[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.887724+00:00 [info] <0.229.0> Running boot step rabbit_mirror_queue_mode_exactly defined by app rabbit[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.887801+00:00 [info] <0.229.0> Running boot step rabbit_mirror_queue_mode_nodes defined by app rabbit[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.887865+00:00 [info] <0.229.0> Running boot step rabbit_priority_queue defined by app rabbit[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.887909+00:00 [info] <0.229.0> Priority queues enabled, real BQ is rabbit_variable_queue[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.887973+00:00 [info] <0.229.0> Running boot step rabbit_queue_location_client_local defined by app rabbit[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.888024+00:00 [info] <0.229.0> Running boot step rabbit_queue_location_min_masters defined by app rabbit[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.888071+00:00 [info] <0.229.0> Running boot step rabbit_queue_location_random defined by app rabbit[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.888122+00:00 [info] <0.229.0> Running boot step kernel_ready defined by app rabbit[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.888151+00:00 [info] <0.229.0> Running boot step rabbit_sysmon_minder defined by app rabbit[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.888320+00:00 [info] <0.229.0> Running boot step rabbit_epmd_monitor defined by app rabbit[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.889117+00:00 [info] <0.637.0> epmd monitor knows us, inter-node communication (distribution) port: 25672[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.889285+00:00 [info] <0.229.0> Running boot step guid_generator defined by app rabbit[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.893370+00:00 [info] <0.229.0> Running boot step rabbit_node_monitor defined by app rabbit[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.893655+00:00 [info] <0.641.0> Starting rabbit_node_monitor[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.893813+00:00 [info] <0.229.0> Running boot step delegate_sup defined by app rabbit[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.894339+00:00 [info] <0.229.0> Running boot step rabbit_memory_monitor defined by app rabbit[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.894630+00:00 [info] <0.229.0> Running boot step rabbit_fifo_dlx_sup defined by app rabbit[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.894764+00:00 [info] <0.229.0> Running boot step core_initialized defined by app rabbit[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.894797+00:00 [info] <0.229.0> Running boot step upgrade_queues defined by app rabbit[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.902120+00:00 [info] <0.229.0> message_store upgrades: 1 to apply[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.902319+00:00 [info] <0.229.0> message_store upgrades: Applying rabbit_variable_queue:move_messages_to_vhost_store[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.902512+00:00 [info] <0.229.0> message_store upgrades: No durable queues found. Skipping message store migration[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.902608+00:00 [info] <0.229.0> message_store upgrades: Removing the old message store data[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.903344+00:00 [info] <0.229.0> message_store upgrades: All upgrades applied successfully[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.914322+00:00 [info] <0.229.0> Running boot step channel_tracking defined by app rabbit[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.914447+00:00 [info] <0.229.0> Running boot step rabbit_channel_tracking_handler defined by app rabbit[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.914568+00:00 [info] <0.229.0> Running boot step connection_tracking defined by app rabbit[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.914677+00:00 [info] <0.229.0> Running boot step rabbit_connection_tracking_handler defined by app rabbit[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.914740+00:00 [info] <0.229.0> Running boot step rabbit_definitions_hashing defined by app rabbit[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.914835+00:00 [info] <0.229.0> Running boot step rabbit_exchange_parameters defined by app rabbit[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.915003+00:00 [info] <0.229.0> Running boot step rabbit_mirror_queue_misc defined by app rabbit[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.915337+00:00 [info] <0.229.0> Running boot step rabbit_policies defined by app rabbit[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.915813+00:00 [info] <0.229.0> Running boot step rabbit_policy defined by app rabbit[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.915917+00:00 [info] <0.229.0> Running boot step rabbit_queue_location_validator defined by app rabbit[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.916015+00:00 [info] <0.229.0> Running boot step rabbit_quorum_memory_manager defined by app rabbit[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.916082+00:00 [info] <0.229.0> Running boot step rabbit_stream_coordinator defined by app rabbit[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.916429+00:00 [info] <0.229.0> Running boot step rabbit_vhost_limit defined by app rabbit[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.916605+00:00 [info] <0.229.0> Running boot step rabbit_mgmt_db_handler defined by app rabbitmq_management_agent[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.916652+00:00 [info] <0.229.0> Management plugin: using rates mode 'basic'[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.917214+00:00 [info] <0.229.0> Running boot step recovery defined by app rabbit[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.918202+00:00 [info] <0.229.0> Running boot step empty_db_check defined by app rabbit[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.918296+00:00 [info] <0.229.0> Will seed default virtual host and user...[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.918368+00:00 [info] <0.229.0> Adding vhost '/' (description: 'Default virtual host', tags: [])[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.923086+00:00 [info] <0.229.0> Applying default limits to vhost '<<"/">>': [][0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.953992+00:00 [info] <0.683.0> Making sure data directory '/var/lib/rabbitmq/mnesia/rabbit@6aeae7812dc7/msg_stores/vhosts/628WB79CIFDYO9LJI6DKMI09L' for vhost '/' exists[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.955279+00:00 [info] <0.683.0> Setting segment_entry_count for vhost '/' with 0 queues to '2048'[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.960005+00:00 [info] <0.683.0> Starting message stores for vhost '/'[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.960405+00:00 [info] <0.688.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_transient": using rabbit_msg_store_ets_index to provide index[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.961699+00:00 [info] <0.683.0> Started message store of type transient for vhost '/'[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.961931+00:00 [info] <0.692.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_persistent": using rabbit_msg_store_ets_index to provide index[0m
+nomad_oasis_rabbitmq  | [38;5;214m2023-12-26 16:20:19.962786+00:00 [warning] <0.692.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_persistent": rebuilding indices from scratch[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.963686+00:00 [info] <0.683.0> Started message store of type persistent for vhost '/'[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.963858+00:00 [info] <0.683.0> Recovering 0 queues of type rabbit_classic_queue took 8ms[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.963901+00:00 [info] <0.683.0> Recovering 0 queues of type rabbit_quorum_queue took 0ms[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.963931+00:00 [info] <0.683.0> Recovering 0 queues of type rabbit_stream_queue took 0ms[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.969871+00:00 [info] <0.229.0> Created user 'rabbitmq'[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.974183+00:00 [info] <0.229.0> Successfully set user tags for user 'rabbitmq' to [administrator][0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.978377+00:00 [info] <0.229.0> Successfully set permissions for 'rabbitmq' in virtual host '/' to '.*', '.*', '.*'[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.978503+00:00 [info] <0.229.0> Running boot step rabbit_observer_cli defined by app rabbit[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.978623+00:00 [info] <0.229.0> Running boot step rabbit_looking_glass defined by app rabbit[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.978657+00:00 [info] <0.229.0> Running boot step rabbit_core_metrics_gc defined by app rabbit[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.978804+00:00 [info] <0.229.0> Running boot step background_gc defined by app rabbit[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.979246+00:00 [info] <0.229.0> Running boot step routing_ready defined by app rabbit[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.979323+00:00 [info] <0.229.0> Running boot step pre_flight defined by app rabbit[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.979350+00:00 [info] <0.229.0> Running boot step notify_cluster defined by app rabbit[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.979377+00:00 [info] <0.229.0> Running boot step networking defined by app rabbit[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.979447+00:00 [info] <0.229.0> Running boot step definition_import_worker_pool defined by app rabbit[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.979530+00:00 [info] <0.286.0> Starting worker pool 'definition_import_pool' with 12 processes in it[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.980191+00:00 [info] <0.229.0> Running boot step cluster_name defined by app rabbit[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.980271+00:00 [info] <0.229.0> Initialising internal cluster ID to 'rabbitmq-cluster-id-QxdRwzGx1qthr4FYwbrs9A'[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.984129+00:00 [info] <0.229.0> Running boot step direct_client defined by app rabbit[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.984311+00:00 [info] <0.229.0> Running boot step rabbit_maintenance_mode_state defined by app rabbit[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.984343+00:00 [info] <0.229.0> Creating table rabbit_node_maintenance_states for maintenance mode status[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:19.989464+00:00 [info] <0.737.0> Resetting node maintenance status[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:20.004313+00:00 [info] <0.764.0> Prometheus metrics: HTTP (non-TLS) listener started on port 15692[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:20.004635+00:00 [info] <0.737.0> Ready to start client connection listeners[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:20.007351+00:00 [info] <0.808.0> started TCP listener on [::]:5672[0m
+nomad_oasis_rabbitmq  |  completed with 3 plugins.
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:20.070601+00:00 [info] <0.737.0> Server startup complete; 3 plugins started.[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:20.070601+00:00 [info] <0.737.0>  * rabbitmq_prometheus[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:20.070601+00:00 [info] <0.737.0>  * rabbitmq_web_dispatch[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:20.070601+00:00 [info] <0.737.0>  * rabbitmq_management_agent[0m
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:22,513Z", "level": "INFO", "component": "o.e.x.m.p.l.CppLogMessageHandler", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "[controller/225] [Main.cc@122] controller (64 bit): Version 7.17.1 (Build 6d8a28b39bf223) Copyright (c) 2022 Elasticsearch BV" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:22,768Z", "level": "INFO", "component": "o.e.x.s.a.s.FileRolesStore", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "parsed [0] roles from file [/usr/share/elasticsearch/config/roles.yml]" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:23,147Z", "level": "INFO", "component": "o.e.i.g.ConfigDatabases", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "initialized default databases [[GeoLite2-Country.mmdb, GeoLite2-City.mmdb, GeoLite2-ASN.mmdb]], config databases [[]] and watching [/usr/share/elasticsearch/config/ingest-geoip] for changes" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:23,148Z", "level": "INFO", "component": "o.e.i.g.DatabaseNodeService", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "initialized database registry, using geoip-databases directory [/tmp/elasticsearch-18096994177854297073/geoip-databases/ZewW-DK8TGi75YDKJH6l0w]" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:23,583Z", "level": "INFO", "component": "o.e.t.NettyAllocator", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "creating NettyAllocator with the following configs: [name=unpooled, suggested_max_allocation_size=1mb, factors={es.unsafe.use_unpooled_allocator=null, g1gc_enabled=true, g1gc_region_size=4mb, heap_size=512mb}]" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:23,613Z", "level": "INFO", "component": "o.e.i.r.RecoverySettings", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "using rate limit [40mb] with [default=40mb, read=0b, write=0b, max=0b]" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:23,650Z", "level": "INFO", "component": "o.e.d.DiscoveryModule", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "using discovery type [single-node] and seed hosts providers [settings]" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:23,981Z", "level": "INFO", "component": "o.e.g.DanglingIndicesState", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "gateway.auto_import_dangling_indices is disabled, dangling indices will not be automatically detected or imported and must be managed manually" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:24,297Z", "level": "INFO", "component": "o.e.n.Node", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "initialized" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:24,297Z", "level": "INFO", "component": "o.e.n.Node", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "starting ..." }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:24,323Z", "level": "INFO", "component": "o.e.x.s.c.f.PersistentCache", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "persistent cache index loaded" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:24,324Z", "level": "INFO", "component": "o.e.x.d.l.DeprecationIndexingComponent", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "deprecation component started" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:24,404Z", "level": "INFO", "component": "o.e.t.TransportService", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "publish_address {172.25.0.3:9300}, bound_addresses {0.0.0.0:9300}" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:24,728Z", "level": "INFO", "component": "o.e.c.c.Coordinator", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "cluster UUID [vKkAavuSQ-OGvgxfCbpcDw]" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:24,809Z", "level": "INFO", "component": "o.e.c.s.MasterService", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "elected-as-master ([1] nodes joined)[{7833ef70e1d5}{ZewW-DK8TGi75YDKJH6l0w}{6VMjhTPdRFK5JhygPO5ilQ}{172.25.0.3}{172.25.0.3:9300}{cdfhilmrstw} elect leader, _BECOME_MASTER_TASK_, _FINISH_ELECTION_], term: 8, version: 125, delta: master node changed {previous [], current [{7833ef70e1d5}{ZewW-DK8TGi75YDKJH6l0w}{6VMjhTPdRFK5JhygPO5ilQ}{172.25.0.3}{172.25.0.3:9300}{cdfhilmrstw}]}" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:24,893Z", "level": "INFO", "component": "o.e.c.s.ClusterApplierService", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "master node changed {previous [], current [{7833ef70e1d5}{ZewW-DK8TGi75YDKJH6l0w}{6VMjhTPdRFK5JhygPO5ilQ}{172.25.0.3}{172.25.0.3:9300}{cdfhilmrstw}]}, term: 8, version: 125, reason: Publication{term=8, version=125}" }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:24,957Z", "level": "INFO", "component": "o.e.h.AbstractHttpServerTransport", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "publish_address {172.25.0.3:9200}, bound_addresses {0.0.0.0:9200}", "cluster.uuid": "vKkAavuSQ-OGvgxfCbpcDw", "node.id": "ZewW-DK8TGi75YDKJH6l0w"  }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:24,958Z", "level": "INFO", "component": "o.e.n.Node", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "started", "cluster.uuid": "vKkAavuSQ-OGvgxfCbpcDw", "node.id": "ZewW-DK8TGi75YDKJH6l0w"  }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:25,272Z", "level": "INFO", "component": "o.e.l.LicenseService", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "license [f9efa448-0988-4c2c-8b1c-346dedd146ab] mode [basic] - valid", "cluster.uuid": "vKkAavuSQ-OGvgxfCbpcDw", "node.id": "ZewW-DK8TGi75YDKJH6l0w"  }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:25,274Z", "level": "INFO", "component": "o.e.x.s.s.SecurityStatusChangeListener", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "Active license is now [BASIC]; Security is disabled", "cluster.uuid": "vKkAavuSQ-OGvgxfCbpcDw", "node.id": "ZewW-DK8TGi75YDKJH6l0w"  }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:25,274Z", "level": "WARN", "component": "o.e.x.s.s.SecurityStatusChangeListener", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-minimal-setup.html to enable security.", "cluster.uuid": "vKkAavuSQ-OGvgxfCbpcDw", "node.id": "ZewW-DK8TGi75YDKJH6l0w"  }
+nomad_oasis_elastic   | {"type": "deprecation.elasticsearch", "timestamp": "2023-12-26T16:20:25,276Z", "level": "CRITICAL", "component": "o.e.d.x.s.s.SecurityStatusChangeListener", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "The default behavior of disabling security on basic licenses is deprecated. In a later version of Elasticsearch, the value of [xpack.security.enabled] will default to \"true\" , regardless of the license level. See https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-minimal-setup.html to enable security, or explicitly disable security by setting [xpack.security.enabled] to false in elasticsearch.yml", "key": "security_implicitly_disabled", "category": "security", "cluster.uuid": "vKkAavuSQ-OGvgxfCbpcDw", "node.id": "ZewW-DK8TGi75YDKJH6l0w"  }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:25,283Z", "level": "INFO", "component": "o.e.g.GatewayService", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "recovered [5] indices into cluster_state", "cluster.uuid": "vKkAavuSQ-OGvgxfCbpcDw", "node.id": "ZewW-DK8TGi75YDKJH6l0w"  }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:25,711Z", "level": "INFO", "component": "o.e.i.g.GeoIpDownloader", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "updating geoip databases", "cluster.uuid": "vKkAavuSQ-OGvgxfCbpcDw", "node.id": "ZewW-DK8TGi75YDKJH6l0w"  }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:25,712Z", "level": "INFO", "component": "o.e.i.g.GeoIpDownloader", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "fetching geoip databases overview from [https://geoip.elastic.co/v1/database?elastic_geoip_service_tos=agree]", "cluster.uuid": "vKkAavuSQ-OGvgxfCbpcDw", "node.id": "ZewW-DK8TGi75YDKJH6l0w"  }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:25,776Z", "level": "INFO", "component": "o.e.i.g.DatabaseNodeService", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "downloading geoip database [GeoLite2-Country.mmdb] to [/tmp/elasticsearch-18096994177854297073/geoip-databases/ZewW-DK8TGi75YDKJH6l0w/GeoLite2-Country.mmdb.tmp.gz]", "cluster.uuid": "vKkAavuSQ-OGvgxfCbpcDw", "node.id": "ZewW-DK8TGi75YDKJH6l0w"  }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:25,777Z", "level": "INFO", "component": "o.e.i.g.DatabaseNodeService", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "downloading geoip database [GeoLite2-ASN.mmdb] to [/tmp/elasticsearch-18096994177854297073/geoip-databases/ZewW-DK8TGi75YDKJH6l0w/GeoLite2-ASN.mmdb.tmp.gz]", "cluster.uuid": "vKkAavuSQ-OGvgxfCbpcDw", "node.id": "ZewW-DK8TGi75YDKJH6l0w"  }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:25,777Z", "level": "INFO", "component": "o.e.i.g.DatabaseNodeService", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "downloading geoip database [GeoLite2-City.mmdb] to [/tmp/elasticsearch-18096994177854297073/geoip-databases/ZewW-DK8TGi75YDKJH6l0w/GeoLite2-City.mmdb.tmp.gz]", "cluster.uuid": "vKkAavuSQ-OGvgxfCbpcDw", "node.id": "ZewW-DK8TGi75YDKJH6l0w"  }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:26,101Z", "level": "INFO", "component": "o.e.c.r.a.AllocationService", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[.ds-.logs-deprecation.elasticsearch-default-2023.12.24-000001][0]]]).", "cluster.uuid": "vKkAavuSQ-OGvgxfCbpcDw", "node.id": "ZewW-DK8TGi75YDKJH6l0w"  }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:26,142Z", "level": "INFO", "component": "o.e.i.g.DatabaseNodeService", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "successfully reloaded changed geoip database file [/tmp/elasticsearch-18096994177854297073/geoip-databases/ZewW-DK8TGi75YDKJH6l0w/GeoLite2-Country.mmdb]", "cluster.uuid": "vKkAavuSQ-OGvgxfCbpcDw", "node.id": "ZewW-DK8TGi75YDKJH6l0w"  }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:26,162Z", "level": "INFO", "component": "o.e.i.g.DatabaseNodeService", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "successfully reloaded changed geoip database file [/tmp/elasticsearch-18096994177854297073/geoip-databases/ZewW-DK8TGi75YDKJH6l0w/GeoLite2-ASN.mmdb]", "cluster.uuid": "vKkAavuSQ-OGvgxfCbpcDw", "node.id": "ZewW-DK8TGi75YDKJH6l0w"  }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:26,489Z", "level": "INFO", "component": "o.e.i.g.GeoIpDownloader", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "geoip database [GeoLite2-ASN.mmdb] is up to date, updated timestamp", "cluster.uuid": "vKkAavuSQ-OGvgxfCbpcDw", "node.id": "ZewW-DK8TGi75YDKJH6l0w"  }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:26,552Z", "level": "INFO", "component": "o.e.i.g.GeoIpDownloader", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "geoip database [GeoLite2-City.mmdb] is up to date, updated timestamp", "cluster.uuid": "vKkAavuSQ-OGvgxfCbpcDw", "node.id": "ZewW-DK8TGi75YDKJH6l0w"  }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:26,616Z", "level": "INFO", "component": "o.e.i.g.GeoIpDownloader", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "geoip database [GeoLite2-Country.mmdb] is up to date, updated timestamp", "cluster.uuid": "vKkAavuSQ-OGvgxfCbpcDw", "node.id": "ZewW-DK8TGi75YDKJH6l0w"  }
+nomad_oasis_elastic   | {"type": "server", "timestamp": "2023-12-26T16:20:26,713Z", "level": "INFO", "component": "o.e.i.g.DatabaseNodeService", "cluster.name": "docker-cluster", "node.name": "7833ef70e1d5", "message": "successfully reloaded changed geoip database file [/tmp/elasticsearch-18096994177854297073/geoip-databases/ZewW-DK8TGi75YDKJH6l0w/GeoLite2-City.mmdb]", "cluster.uuid": "vKkAavuSQ-OGvgxfCbpcDw", "node.id": "ZewW-DK8TGi75YDKJH6l0w"  }
+nomad_oasis_worker    |  
+nomad_oasis_worker    |  -------------- celery@6b74db6d6338 v5.2.7 (dawn-chorus)
+nomad_oasis_worker    | --- ***** ----- 
+nomad_oasis_worker    | -- ******* ---- Linux-6.5.11-linuxkit-x86_64-with-glibc2.36 2023-12-26 16:20:40
+nomad_oasis_worker    | - *** --- * --- 
+nomad_oasis_worker    | - ** ---------- [config]
+nomad_oasis_worker    | - ** ---------- .> app:         nomad.processing:0x7fe34cfa54c0
+nomad_oasis_worker    | - ** ---------- .> transport:   amqp://rabbitmq:**@rabbitmq:5672//
+nomad_oasis_worker    | - ** ---------- .> results:     disabled://
+nomad_oasis_worker    | - *** --- * --- .> concurrency: 12 (prefork)
+nomad_oasis_worker    | -- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+nomad_oasis_worker    | --- ***** ----- 
+nomad_oasis_worker    |  -------------- [queues]
+nomad_oasis_worker    |                 .> celery           exchange=celery(direct) key=celery
+nomad_oasis_worker    |                 
+nomad_oasis_worker    | 
+nomad_oasis_worker    | [tasks]
+nomad_oasis_worker    |   . nomad.app.resources.routers.resources.retrieve_resources
+nomad_oasis_worker    |   . nomad.processing.base.proc_task
+nomad_oasis_worker    | 
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:42.580747+00:00 [info] <0.815.0> accepting AMQP connection <0.815.0> (172.25.0.7:58940 -> 172.25.0.2:5672)[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:42.585715+00:00 [info] <0.815.0> connection <0.815.0> (172.25.0.7:58940 -> 172.25.0.2:5672): user 'rabbitmq' authenticated and granted access to vhost '/'[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:42.590258+00:00 [info] <0.823.0> accepting AMQP connection <0.823.0> (172.25.0.7:58956 -> 172.25.0.2:5672)[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:42.591712+00:00 [info] <0.823.0> connection <0.823.0> (172.25.0.7:58956 -> 172.25.0.2:5672): user 'rabbitmq' authenticated and granted access to vhost '/'[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:42.599876+00:00 [info] <0.841.0> accepting AMQP connection <0.841.0> (172.25.0.7:58960 -> 172.25.0.2:5672)[0m
+nomad_oasis_rabbitmq  | 2023-12-26 16:20:42.601220+00:00 [info] <0.841.0> connection <0.841.0> (172.25.0.7:58960 -> 172.25.0.2:5672): user 'rabbitmq' authenticated and granted access to vhost '/'[0m
+nomad_oasis_app       | INFO:     Started server process [7]
+nomad_oasis_app       | INFO:     Waiting for application startup.
+nomad_oasis_app       | INFO:     Application startup complete.
+nomad_oasis_app       | INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+nomad_oasis_app       | INFO:     127.0.0.1:54578 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:55368 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:50256 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:38864 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:48896 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:52150 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:38934 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:33440 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:41748 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:57296 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:35174 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:49322 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:34890 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:53510 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:38092 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:56372 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:37520 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:44958 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:47734 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:46014 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:58388 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:46164 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:51214 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:57586 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:52900 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_north     | 16:25:18.124 [ConfigProxy] [32minfo[39m: 200 GET /api/routes 
+nomad_oasis_north     | [I 2023-12-26 16:25:18.127 JupyterHub proxy:347] Checking routes
+nomad_oasis_app       | INFO:     127.0.0.1:51794 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:58418 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:55404 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:53924 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:52888 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     172.25.0.8:48236 - "GET /nomad-oasis/alive HTTP/1.0" 200 OK
+nomad_oasis_proxy     | 172.25.0.1 - - [26/Dec/2023:16:26:10 +0000] "GET /nomad-oasis/alive HTTP/1.1" 200 14 "-" "curl/7.81.0" "-"
+nomad_oasis_app       | INFO:     127.0.0.1:49958 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:45026 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:56648 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:37960 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:35694 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     172.25.0.8:54396 - "GET / HTTP/1.0" 404 Not Found
+nomad_oasis_app       | INFO:     172.25.0.8:54402 - "GET /index.html HTTP/1.0" 200 OK
+nomad_oasis_proxy     | 172.25.0.1 - - [26/Dec/2023:16:27:07 +0000] "GET /nomad-oasis/gui/ HTTP/1.1" 200 3653 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" "-"
+nomad_oasis_app       | INFO:     172.25.0.8:54412 - "GET /tinymce/tinymce.min.js HTTP/1.0" 200 OK
+nomad_oasis_proxy     | 172.25.0.1 - - [26/Dec/2023:16:27:07 +0000] "GET /nomad-oasis/gui/tinymce/tinymce.min.js HTTP/1.1" 200 391899 "http://localhost:81/nomad-oasis/gui/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" "-"
+nomad_oasis_app       | INFO:     172.25.0.8:54436 - "GET /env.js HTTP/1.0" 200 OK
+nomad_oasis_proxy     | 172.25.0.1 - - [26/Dec/2023:16:27:07 +0000] "GET /nomad-oasis/gui/env.js HTTP/1.1" 200 54663 "http://localhost:81/nomad-oasis/gui/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" "-"
+nomad_oasis_app       | INFO:     172.25.0.8:54462 - "GET /artifacts.js HTTP/1.0" 200 OK
+nomad_oasis_app       | INFO:     172.25.0.8:54434 - "GET /static/css/2.dbe91c6c.chunk.css HTTP/1.0" 200 OK
+nomad_oasis_app       | INFO:     172.25.0.8:54424 - "GET /pace.css HTTP/1.0" 200 OK
+nomad_oasis_app       | INFO:     172.25.0.8:54414 - "GET /main.css HTTP/1.0" 200 OK
+nomad_oasis_app       | INFO:     172.25.0.8:54448 - "GET /static/css/main.ab3bb326.chunk.css HTTP/1.0" 200 OK
+nomad_oasis_proxy     | 2023/12/26 16:27:07 [warn] 7#7: *3 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/1/00/0000000001 while reading upstream, client: 172.25.0.1, server: localhost, request: "GET /nomad-oasis/gui/artifacts.js HTTP/1.1", upstream: "http://172.25.0.6:8000/nomad-oasis/gui/artifacts.js", host: "localhost:81", referrer: "http://localhost:81/nomad-oasis/gui/"
+nomad_oasis_proxy     | 172.25.0.1 - - [26/Dec/2023:16:27:07 +0000] "GET /nomad-oasis/gui/pace.css HTTP/1.1" 200 702 "http://localhost:81/nomad-oasis/gui/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" "-"
+nomad_oasis_proxy     | 172.25.0.1 - - [26/Dec/2023:16:27:07 +0000] "GET /nomad-oasis/gui/static/css/2.dbe91c6c.chunk.css HTTP/1.1" 200 40836 "http://localhost:81/nomad-oasis/gui/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" "-"
+nomad_oasis_proxy     | 172.25.0.1 - - [26/Dec/2023:16:27:07 +0000] "GET /nomad-oasis/gui/main.css HTTP/1.1" 200 64 "http://localhost:81/nomad-oasis/gui/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" "-"
+nomad_oasis_proxy     | 172.25.0.1 - - [26/Dec/2023:16:27:07 +0000] "GET /nomad-oasis/gui/static/css/main.ab3bb326.chunk.css HTTP/1.1" 200 1425 "http://localhost:81/nomad-oasis/gui/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" "-"
+nomad_oasis_app       | INFO:     172.25.0.8:54466 - "GET /static/js/2.276cb493.chunk.js HTTP/1.0" 200 OK
+nomad_oasis_app       | INFO:     172.25.0.8:54480 - "GET /static/js/main.1361ff26.chunk.js HTTP/1.0" 200 OK
+nomad_oasis_app       | INFO:     172.25.0.8:54496 - "GET /nomad-text.png HTTP/1.0" 200 OK
+nomad_oasis_proxy     | 172.25.0.1 - - [26/Dec/2023:16:27:07 +0000] "GET /nomad-oasis/gui/nomad-text.png HTTP/1.1" 200 11384 "http://localhost:81/nomad-oasis/gui/pace.css" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" "-"
+nomad_oasis_proxy     | 172.25.0.1 - - [26/Dec/2023:16:27:07 +0000] "GET /nomad-oasis/gui/static/js/main.1361ff26.chunk.js HTTP/1.1" 200 1501357 "http://localhost:81/nomad-oasis/gui/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" "-"
+nomad_oasis_app       | INFO:     127.0.0.1:47600 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_proxy     | 172.25.0.1 - - [26/Dec/2023:16:27:07 +0000] "GET /nomad-oasis/gui/static/js/2.276cb493.chunk.js HTTP/1.1" 200 9908532 "http://localhost:81/nomad-oasis/gui/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" "-"
+nomad_oasis_proxy     | 172.25.0.1 - - [26/Dec/2023:16:27:08 +0000] "GET /nomad-oasis/gui/artifacts.js HTTP/1.1" 200 46687121 "http://localhost:81/nomad-oasis/gui/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" "-"
+nomad_oasis_app       | INFO:     172.25.0.8:54510 - "GET /manifest.json HTTP/1.0" 200 OK
+nomad_oasis_proxy     | 172.25.0.1 - - [26/Dec/2023:16:27:08 +0000] "GET /nomad-oasis/gui/manifest.json HTTP/1.1" 200 511 "http://localhost:81/nomad-oasis/gui/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" "-"
+nomad_oasis_app       | INFO:     172.25.0.8:54520 - "GET /favicon-hres.png HTTP/1.0" 200 OK
+nomad_oasis_proxy     | 172.25.0.1 - - [26/Dec/2023:16:27:08 +0000] "GET /nomad-oasis/gui/favicon-hres.png HTTP/1.1" 200 76355 "http://localhost:81/nomad-oasis/gui/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" "-"
+nomad_oasis_app       | INFO:     172.25.0.8:54526 - "GET / HTTP/1.0" 404 Not Found
+nomad_oasis_app       | INFO:     172.25.0.8:54530 - "GET /index.html HTTP/1.0" 200 OK
+nomad_oasis_proxy     | 172.25.0.1 - - [26/Dec/2023:16:27:09 +0000] "GET /nomad-oasis/gui/ HTTP/1.1" 200 3653 "http://localhost:81/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" "-"
+nomad_oasis_app       | INFO:     172.25.0.8:54542 - "GET /tinymce/tinymce.min.js HTTP/1.0" 304 Not Modified
+nomad_oasis_proxy     | 172.25.0.1 - - [26/Dec/2023:16:27:09 +0000] "GET /nomad-oasis/gui/tinymce/tinymce.min.js HTTP/1.1" 304 0 "http://localhost:81/nomad-oasis/gui/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" "-"
+nomad_oasis_app       | INFO:     172.25.0.8:54558 - "GET /artifacts.js HTTP/1.0" 200 OK
+nomad_oasis_app       | INFO:     172.25.0.8:54560 - "GET /env.js HTTP/1.0" 200 OK
+nomad_oasis_proxy     | 172.25.0.1 - - [26/Dec/2023:16:27:09 +0000] "GET /nomad-oasis/gui/env.js HTTP/1.1" 200 54663 "http://localhost:81/nomad-oasis/gui/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" "-"
+nomad_oasis_app       | INFO:     172.25.0.8:54574 - "GET /static/js/main.1361ff26.chunk.js HTTP/1.0" 304 Not Modified
+nomad_oasis_app       | INFO:     172.25.0.8:54578 - "GET /static/js/2.276cb493.chunk.js HTTP/1.0" 304 Not Modified
+nomad_oasis_proxy     | 2023/12/26 16:27:09 [warn] 7#7: *5 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/2/00/0000000002 while reading upstream, client: 172.25.0.1, server: localhost, request: "GET /nomad-oasis/gui/artifacts.js HTTP/1.1", upstream: "http://172.25.0.6:8000/nomad-oasis/gui/artifacts.js", host: "localhost:81", referrer: "http://localhost:81/nomad-oasis/gui/"
+nomad_oasis_proxy     | 172.25.0.1 - - [26/Dec/2023:16:27:09 +0000] "GET /nomad-oasis/gui/static/js/2.276cb493.chunk.js HTTP/1.1" 304 0 "http://localhost:81/nomad-oasis/gui/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" "-"
+nomad_oasis_proxy     | 172.25.0.1 - - [26/Dec/2023:16:27:09 +0000] "GET /nomad-oasis/gui/static/js/main.1361ff26.chunk.js HTTP/1.1" 304 0 "http://localhost:81/nomad-oasis/gui/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" "-"
+nomad_oasis_proxy     | 172.25.0.1 - - [26/Dec/2023:16:27:09 +0000] "GET /nomad-oasis/gui/artifacts.js HTTP/1.1" 200 46687121 "http://localhost:81/nomad-oasis/gui/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" "-"
+nomad_oasis_app       | INFO:     172.25.0.8:54592 - "GET /nomad-oasis.png HTTP/1.0" 200 OK
+nomad_oasis_proxy     | 172.25.0.1 - - [26/Dec/2023:16:27:10 +0000] "GET /nomad-oasis/gui/nomad-oasis.png HTTP/1.1" 200 16295 "http://localhost:81/nomad-oasis/gui/about/information" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" "-"
+nomad_oasis_app       | INFO:     172.25.0.8:54606 - "GET /info HTTP/1.0" 200 OK
+nomad_oasis_proxy     | 172.25.0.1 - - [26/Dec/2023:16:27:10 +0000] "GET /nomad-oasis/api/v1/info HTTP/1.1" 200 134713 "http://localhost:81/nomad-oasis/gui/about/information" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" "-"
+nomad_oasis_app       | INFO:     172.25.0.8:54608 - "GET /static/media/titillium-web-latin-400-normal.55b29b13.woff2 HTTP/1.0" 200 OK
+nomad_oasis_app       | INFO:     172.25.0.8:54622 - "GET /static/media/titillium-web-latin-600-normal.37816aa7.woff2 HTTP/1.0" 200 OK
+nomad_oasis_proxy     | 172.25.0.1 - - [26/Dec/2023:16:27:10 +0000] "GET /nomad-oasis/gui/static/media/titillium-web-latin-400-normal.55b29b13.woff2 HTTP/1.1" 200 12372 "http://localhost:81/nomad-oasis/gui/static/css/2.dbe91c6c.chunk.css" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" "-"
+nomad_oasis_proxy     | 172.25.0.1 - - [26/Dec/2023:16:27:10 +0000] "GET /nomad-oasis/gui/static/media/titillium-web-latin-600-normal.37816aa7.woff2 HTTP/1.1" 200 12136 "http://localhost:81/nomad-oasis/gui/static/css/2.dbe91c6c.chunk.css" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" "-"
+nomad_oasis_app       | INFO:     172.25.0.8:54630 - "GET /service-worker.js HTTP/1.0" 200 OK
+nomad_oasis_proxy     | 172.25.0.1 - - [26/Dec/2023:16:27:10 +0000] "GET /nomad-oasis/gui/service-worker.js HTTP/1.1" 200 28437 "http://localhost:81/nomad-oasis/gui/about/information" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" "-"
+nomad_oasis_app       | INFO:     172.25.0.8:54632 - "GET /favicon.ico HTTP/1.0" 200 OK
+nomad_oasis_proxy     | 172.25.0.1 - - [26/Dec/2023:16:27:10 +0000] "GET /nomad-oasis/gui/favicon.ico HTTP/1.1" 200 15406 "http://localhost:81/nomad-oasis/gui/about/information" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" "-"
+nomad_oasis_app       | INFO:     172.25.0.8:54646 - "GET /service-worker.js HTTP/1.0" 200 OK
+nomad_oasis_proxy     | 172.25.0.1 - - [26/Dec/2023:16:27:10 +0000] "GET /nomad-oasis/gui/service-worker.js HTTP/1.1" 200 28437 "http://localhost:81/nomad-oasis/gui/about/information" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" "-"
+nomad_oasis_app       | INFO:     172.25.0.8:54662 - "GET /index.html HTTP/1.0" 200 OK
+nomad_oasis_proxy     | 172.25.0.1 - - [26/Dec/2023:16:27:10 +0000] "GET /nomad-oasis/gui/index.html HTTP/1.1" 200 3653 "http://localhost:81/nomad-oasis/gui/service-worker.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" "-"
+nomad_oasis_proxy     | 172.25.0.1 - - [26/Dec/2023:16:27:10 +0000] "GET /nomad-oasis/gui/static/js/2.276cb493.chunk.js HTTP/1.1" 304 0 "http://localhost:81/nomad-oasis/gui/service-worker.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" "-"
+nomad_oasis_app       | INFO:     172.25.0.8:54668 - "GET /static/js/2.276cb493.chunk.js HTTP/1.0" 304 Not Modified
+nomad_oasis_app       | INFO:     172.25.0.8:54680 - "GET /static/js/main.1361ff26.chunk.js HTTP/1.0" 304 Not Modified
+nomad_oasis_proxy     | 172.25.0.1 - - [26/Dec/2023:16:27:11 +0000] "GET /nomad-oasis/gui/static/js/main.1361ff26.chunk.js HTTP/1.1" 304 0 "http://localhost:81/nomad-oasis/gui/service-worker.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" "-"
+nomad_oasis_app       | INFO:     172.25.0.8:54684 - "GET /static/js/runtime-main.397b9381.js HTTP/1.0" 200 OK
+nomad_oasis_proxy     | 172.25.0.1 - - [26/Dec/2023:16:27:11 +0000] "GET /nomad-oasis/gui/static/js/runtime-main.397b9381.js HTTP/1.1" 200 1591 "http://localhost:81/nomad-oasis/gui/service-worker.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" "-"
+nomad_oasis_app       | INFO:     172.25.0.8:54700 - "GET /static/media/AIT_bg_title.ec4f6b2f.jpg HTTP/1.0" 200 OK
+nomad_oasis_proxy     | 172.25.0.1 - - [26/Dec/2023:16:27:11 +0000] "GET /nomad-oasis/gui/static/media/AIT_bg_title.ec4f6b2f.jpg HTTP/1.1" 200 98641 "http://localhost:81/nomad-oasis/gui/service-worker.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" "-"
+nomad_oasis_app       | INFO:     172.25.0.8:54710 - "GET /static/media/AIT_ico_bb_query.ccc0e256.svg HTTP/1.0" 200 OK
+nomad_oasis_proxy     | 172.25.0.1 - - [26/Dec/2023:16:27:11 +0000] "GET /nomad-oasis/gui/static/media/AIT_ico_bb_query.ccc0e256.svg HTTP/1.1" 200 5799 "http://localhost:81/nomad-oasis/gui/service-worker.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" "-"
+nomad_oasis_app       | INFO:     172.25.0.8:54726 - "GET /static/media/AIT_ico_bb_replicate.4d55a10c.svg HTTP/1.0" 200 OK
+nomad_oasis_proxy     | 172.25.0.1 - - [26/Dec/2023:16:27:11 +0000] "GET /nomad-oasis/gui/static/media/AIT_ico_bb_replicate.4d55a10c.svg HTTP/1.1" 200 4687 "http://localhost:81/nomad-oasis/gui/service-worker.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" "-"
+nomad_oasis_app       | INFO:     172.25.0.8:54736 - "GET /static/media/AIT_ico_bb_tutorial.a62a3c43.svg HTTP/1.0" 200 OK
+nomad_oasis_proxy     | 172.25.0.1 - - [26/Dec/2023:16:27:11 +0000] "GET /nomad-oasis/gui/static/media/AIT_ico_bb_tutorial.a62a3c43.svg HTTP/1.1" 200 4741 "http://localhost:81/nomad-oasis/gui/service-worker.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" "-"
+nomad_oasis_app       | INFO:     172.25.0.8:54742 - "GET /static/media/AIT_ico_bb_work.22c23de0.svg HTTP/1.0" 200 OK
+nomad_oasis_proxy     | 172.25.0.1 - - [26/Dec/2023:16:27:11 +0000] "GET /nomad-oasis/gui/static/media/AIT_ico_bb_work.22c23de0.svg HTTP/1.1" 200 7315 "http://localhost:81/nomad-oasis/gui/service-worker.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" "-"
+nomad_oasis_app       | INFO:     172.25.0.8:54750 - "GET /static/media/AIT_ico_bd_info_circle.3f2825ea.svg HTTP/1.0" 200 OK
+nomad_oasis_proxy     | 172.25.0.1 - - [26/Dec/2023:16:27:11 +0000] "GET /nomad-oasis/gui/static/media/AIT_ico_bd_info_circle.3f2825ea.svg HTTP/1.1" 200 437 "http://localhost:81/nomad-oasis/gui/service-worker.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" "-"
+nomad_oasis_app       | INFO:     172.25.0.8:54756 - "GET /static/media/AIT_ico_bd_link_doi.283a35b5.svg HTTP/1.0" 200 OK
+nomad_oasis_proxy     | 172.25.0.1 - - [26/Dec/2023:16:27:11 +0000] "GET /nomad-oasis/gui/static/media/AIT_ico_bd_link_doi.283a35b5.svg HTTP/1.1" 200 911 "http://localhost:81/nomad-oasis/gui/service-worker.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" "-"
+nomad_oasis_app       | INFO:     172.25.0.8:54770 - "GET /static/media/AIT_ico_bd_link_external_big.bdd6876c.svg HTTP/1.0" 200 OK
+nomad_oasis_proxy     | 172.25.0.1 - - [26/Dec/2023:16:27:11 +0000] "GET /nomad-oasis/gui/static/media/AIT_ico_bd_link_external_big.bdd6876c.svg HTTP/1.1" 200 877 "http://localhost:81/nomad-oasis/gui/service-worker.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" "-"
+nomad_oasis_app       | INFO:     172.25.0.8:54772 - "GET /static/media/AIT_ico_bd_link_go_to.dd2ae916.svg HTTP/1.0" 200 OK
+nomad_oasis_proxy     | 172.25.0.1 - - [26/Dec/2023:16:27:11 +0000] "GET /nomad-oasis/gui/static/media/AIT_ico_bd_link_go_to.dd2ae916.svg HTTP/1.1" 200 597 "http://localhost:81/nomad-oasis/gui/service-worker.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" "-"
+nomad_oasis_app       | INFO:     172.25.0.8:54784 - "GET /static/media/AIT_ico_bd_link_pdf.847b5a8e.svg HTTP/1.0" 200 OK
+nomad_oasis_proxy     | 172.25.0.1 - - [26/Dec/2023:16:27:11 +0000] "GET /nomad-oasis/gui/static/media/AIT_ico_bd_link_pdf.847b5a8e.svg HTTP/1.1" 200 994 "http://localhost:81/nomad-oasis/gui/service-worker.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" "-"
+nomad_oasis_app       | INFO:     172.25.0.8:54792 - "GET /static/media/AIT_ico_bd_youtube.9b66b117.svg HTTP/1.0" 200 OK
+nomad_oasis_proxy     | 172.25.0.1 - - [26/Dec/2023:16:27:11 +0000] "GET /nomad-oasis/gui/static/media/AIT_ico_bd_youtube.9b66b117.svg HTTP/1.1" 200 556 "http://localhost:81/nomad-oasis/gui/service-worker.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" "-"
+nomad_oasis_app       | INFO:     172.25.0.8:54808 - "GET /static/media/AIT_ico_bp_query.77de5d79.svg HTTP/1.0" 200 OK
+nomad_oasis_proxy     | 172.25.0.1 - - [26/Dec/2023:16:27:11 +0000] "GET /nomad-oasis/gui/static/media/AIT_ico_bp_query.77de5d79.svg HTTP/1.1" 200 5088 "http://localhost:81/nomad-oasis/gui/service-worker.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" "-"
+nomad_oasis_app       | INFO:     172.25.0.8:54810 - "GET /static/media/AIT_ico_bp_replicate.3964d161.svg HTTP/1.0" 200 OK
+nomad_oasis_proxy     | 172.25.0.1 - - [26/Dec/2023:16:27:11 +0000] "GET /nomad-oasis/gui/static/media/AIT_ico_bp_replicate.3964d161.svg HTTP/1.1" 200 3857 "http://localhost:81/nomad-oasis/gui/service-worker.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" "-"
+nomad_oasis_app       | INFO:     172.25.0.8:54814 - "GET /static/media/AIT_ico_bp_tutorial.40c87c69.svg HTTP/1.0" 200 OK
+nomad_oasis_proxy     | 172.25.0.1 - - [26/Dec/2023:16:27:11 +0000] "GET /nomad-oasis/gui/static/media/AIT_ico_bp_tutorial.40c87c69.svg HTTP/1.1" 200 4113 "http://localhost:81/nomad-oasis/gui/service-worker.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" "-"
+nomad_oasis_app       | INFO:     172.25.0.8:54826 - "GET /static/media/AIT_ico_bp_work.3768d4f3.svg HTTP/1.0" 200 OK
+nomad_oasis_proxy     | 172.25.0.1 - - [26/Dec/2023:16:27:11 +0000] "GET /nomad-oasis/gui/static/media/AIT_ico_bp_work.3768d4f3.svg HTTP/1.1" 200 6390 "http://localhost:81/nomad-oasis/gui/service-worker.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" "-"
+nomad_oasis_app       | INFO:     172.25.0.8:54842 - "GET /static/media/AIT_illu_AIT.625bbdc9.svg HTTP/1.0" 200 OK
+nomad_oasis_proxy     | 172.25.0.1 - - [26/Dec/2023:16:27:11 +0000] "GET /nomad-oasis/gui/static/media/AIT_illu_AIT.625bbdc9.svg HTTP/1.1" 200 3965 "http://localhost:81/nomad-oasis/gui/service-worker.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" "-"
+nomad_oasis_app       | INFO:     172.25.0.8:54850 - "GET /static/media/AIT_slide_nature.f797dd4f.png HTTP/1.0" 200 OK
+nomad_oasis_proxy     | 172.25.0.1 - - [26/Dec/2023:16:27:11 +0000] "GET /nomad-oasis/gui/static/media/AIT_slide_nature.f797dd4f.png HTTP/1.1" 200 219924 "http://localhost:81/nomad-oasis/gui/service-worker.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" "-"
+nomad_oasis_app       | INFO:     172.25.0.8:54854 - "GET /static/media/about.a4d06242.svg HTTP/1.0" 200 OK
+nomad_oasis_proxy     | 172.25.0.1 - - [26/Dec/2023:16:27:11 +0000] "GET /nomad-oasis/gui/static/media/about.a4d06242.svg HTTP/1.1" 200 15924 "http://localhost:81/nomad-oasis/gui/service-worker.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" "-"
+nomad_oasis_app       | INFO:     172.25.0.8:54868 - "GET /static/media/material-icons-base-400-normal.88899cc4.woff HTTP/1.0" 200 OK
+nomad_oasis_proxy     | 172.25.0.1 - - [26/Dec/2023:16:27:11 +0000] "GET /nomad-oasis/gui/static/media/material-icons-base-400-normal.88899cc4.woff HTTP/1.1" 200 156048 "http://localhost:81/nomad-oasis/gui/service-worker.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" "-"
+nomad_oasis_app       | INFO:     172.25.0.8:54874 - "GET /static/media/material-icons-base-400-normal.fbec7347.woff2 HTTP/1.0" 200 OK
+nomad_oasis_proxy     | 172.25.0.1 - - [26/Dec/2023:16:27:11 +0000] "GET /nomad-oasis/gui/static/media/material-icons-base-400-normal.fbec7347.woff2 HTTP/1.1" 200 121568 "http://localhost:81/nomad-oasis/gui/service-worker.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" "-"
+nomad_oasis_app       | INFO:     172.25.0.8:54880 - "GET /static/media/titillium-web-all-400-normal.1b8b406f.woff HTTP/1.0" 200 OK
+nomad_oasis_proxy     | 172.25.0.1 - - [26/Dec/2023:16:27:11 +0000] "GET /nomad-oasis/gui/static/media/titillium-web-all-400-normal.1b8b406f.woff HTTP/1.1" 200 26492 "http://localhost:81/nomad-oasis/gui/service-worker.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" "-"
+nomad_oasis_app       | INFO:     172.25.0.8:54896 - "GET /static/media/titillium-web-all-600-normal.84dcbece.woff HTTP/1.0" 200 OK
+nomad_oasis_proxy     | 172.25.0.1 - - [26/Dec/2023:16:27:11 +0000] "GET /nomad-oasis/gui/static/media/titillium-web-all-600-normal.84dcbece.woff HTTP/1.1" 200 26200 "http://localhost:81/nomad-oasis/gui/service-worker.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" "-"
+nomad_oasis_app       | INFO:     172.25.0.8:54908 - "GET /static/media/titillium-web-latin-ext-400-normal.fc46e868.woff2 HTTP/1.0" 200 OK
+nomad_oasis_proxy     | 172.25.0.1 - - [26/Dec/2023:16:27:11 +0000] "GET /nomad-oasis/gui/static/media/titillium-web-latin-ext-400-normal.fc46e868.woff2 HTTP/1.1" 200 6776 "http://localhost:81/nomad-oasis/gui/service-worker.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" "-"
+nomad_oasis_app       | INFO:     172.25.0.8:54924 - "GET /static/media/titillium-web-latin-ext-600-normal.1fd10332.woff2 HTTP/1.0" 200 OK
+nomad_oasis_proxy     | 172.25.0.1 - - [26/Dec/2023:16:27:11 +0000] "GET /nomad-oasis/gui/static/media/titillium-web-latin-ext-600-normal.1fd10332.woff2 HTTP/1.1" 200 6796 "http://localhost:81/nomad-oasis/gui/service-worker.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" "-"
+nomad_oasis_app       | INFO:     172.25.0.8:56660 - "GET /artifacts.js HTTP/1.0" 200 OK
+nomad_oasis_app       | INFO:     172.25.0.8:56688 - "GET /env.js HTTP/1.0" 200 OK
+nomad_oasis_app       | INFO:     172.25.0.8:56672 - "GET /tinymce/tinymce.min.js HTTP/1.0" 304 Not Modified
+nomad_oasis_proxy     | 2023/12/26 16:27:16 [warn] 7#7: *11 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/3/00/0000000003 while reading upstream, client: 172.25.0.1, server: localhost, request: "GET /nomad-oasis/gui/artifacts.js HTTP/1.1", upstream: "http://172.25.0.6:8000/nomad-oasis/gui/artifacts.js", host: "localhost:81", referrer: "http://localhost:81/nomad-oasis/gui/about/information"
+nomad_oasis_proxy     | 172.25.0.1 - - [26/Dec/2023:16:27:16 +0000] "GET /nomad-oasis/gui/env.js HTTP/1.1" 200 54663 "http://localhost:81/nomad-oasis/gui/about/information" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" "-"
+nomad_oasis_proxy     | 172.25.0.1 - - [26/Dec/2023:16:27:16 +0000] "GET /nomad-oasis/gui/tinymce/tinymce.min.js HTTP/1.1" 304 0 "http://localhost:81/nomad-oasis/gui/about/information" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" "-"
+nomad_oasis_proxy     | 172.25.0.1 - - [26/Dec/2023:16:27:16 +0000] "GET /nomad-oasis/gui/artifacts.js HTTP/1.1" 200 46687121 "http://localhost:81/nomad-oasis/gui/about/information" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" "-"
+nomad_oasis_app       | INFO:     172.25.0.8:56696 - "GET /info HTTP/1.0" 200 OK
+nomad_oasis_proxy     | 172.25.0.1 - - [26/Dec/2023:16:27:17 +0000] "GET /nomad-oasis/api/v1/info HTTP/1.1" 200 134713 "http://localhost:81/nomad-oasis/gui/about/information" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" "-"
+nomad_oasis_app       | INFO:     127.0.0.1:38822 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     172.25.0.8:56708 - "GET /service-worker.js HTTP/1.0" 200 OK
+nomad_oasis_proxy     | 172.25.0.1 - - [26/Dec/2023:16:27:19 +0000] "GET /nomad-oasis/gui/service-worker.js HTTP/1.1" 200 28437 "http://localhost:81/nomad-oasis/gui/service-worker.js" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" "-"
+nomad_oasis_app       | INFO:     127.0.0.1:41142 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:51416 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:47976 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:39840 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:36918 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:50044 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:33366 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:50046 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:45984 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:44704 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:42380 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:55290 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:34564 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:55102 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:54160 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:53176 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:32824 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_north     | 16:30:18.101 [ConfigProxy] [32minfo[39m: 200 GET /api/routes 
+nomad_oasis_north     | [I 2023-12-26 16:30:18.101 JupyterHub proxy:347] Checking routes
+nomad_oasis_app       | INFO:     127.0.0.1:46774 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:48912 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:53750 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:52496 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:39052 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:40050 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:42518 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:39790 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:56226 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:49184 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:53186 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:35814 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:50930 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:49700 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:44818 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:47184 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:52708 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:36636 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:46798 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:56250 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:56212 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:52646 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:58482 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:43120 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:54100 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:58318 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:60932 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:57888 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:48694 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:47202 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_north     | [I 2023-12-26 16:35:18.100 JupyterHub proxy:347] Checking routes
+nomad_oasis_north     | 16:35:18.099 [ConfigProxy] [32minfo[39m: 200 GET /api/routes 
+nomad_oasis_app       | INFO:     127.0.0.1:54534 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:36692 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:51974 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:55358 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:48714 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:60598 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:52190 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:34276 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:57450 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:49964 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:58464 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:36222 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:46486 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:60944 - "GET /-/health HTTP/1.1" 200 OK
+nomad_oasis_app       | INFO:     127.0.0.1:39054 - "GET /-/health HTTP/1.1" 200 OK
+Gracefully stopping... (press Ctrl+C again to force)
+ Container nomad_oasis_proxy  Stopping
+ Container nomad_oasis_proxy  Stopped
+ Container nomad_oasis_worker  Stopping
+ Container nomad_oasis_app  Stopping
+nomad_oasis_proxy exited with code 0
+nomad_oasis_proxy exited with code 0
+time="2023-12-26T17:37:47+01:00" level=error msg="got 3 SIGTERM/SIGINTs, forcing shutdown"
+ Container nomad_oasis_rabbitmq  Killing
+ Container nomad_oasis_worker  Killing
+ Container nomad_oasis_elastic  Killing
+ Container nomad_oasis_app  Killing
+ Container nomad_oasis_north  Killing
+ Container nomad_oasis_mongo  Killing
+ Container nomad_oasis_north  Killed
+nomad_oasis_north exited with code 137
+ Container nomad_oasis_app  Stopped
+ Container nomad_oasis_app  Killed
+ Container nomad_oasis_north  Stopping
+ Container nomad_oasis_north  Stopped
+nomad_oasis_app exited with code 0
+nomad_oasis_app exited with code 137
+ Container nomad_oasis_rabbitmq  Killed
+nomad_oasis_rabbitmq exited with code 137
+ Container nomad_oasis_mongo  Killed
+nomad_oasis_mongo exited with code 137
+ Container nomad_oasis_elastic  Killed
+nomad_oasis_elastic exited with code 137
+ Container nomad_oasis_worker  Killed
+ Container nomad_oasis_worker  Stopped
+ Container nomad_oasis_rabbitmq  Stopping
+ Container nomad_oasis_elastic  Stopping
+ Container nomad_oasis_mongo  Stopping
+ Container nomad_oasis_elastic  Stopped
+ Container nomad_oasis_mongo  Stopped
+ Container nomad_oasis_rabbitmq  Stopped
+nomad_oasis_worker exited with code 0
+canceled
