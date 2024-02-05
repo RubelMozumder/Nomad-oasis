@@ -17,5 +17,18 @@ Where the docker group is `999`.
 1. **Storage**: Depends on the size of the data files.
 2. **Storage Speed** Processing is designed as a synchronized task.
 3. **Compute Resource** Four CPU cores are typically enough for a research group to run application, processing, and database operations in parallel.
-4. **RAM** RAM is used for processing the metadata of individual files. The 2GB per core and at least 8GB are recommended also keep in mind that tools like `jupyter` needs extra RAM and CPU.
+4. **RAM** RAM is used for processing the metadata of individual files. The 2GB per core and at least 8GB are recommended also keep in mind that tools like `jupyter` need extra RAM and CPU.
+
+4. **logtransfer** Service for transferring non-personalized data to nomad-developer team. The data comes in an anonymized from. The data mainly are used for
+  a. Analyzing and monitoring system performance to identify and resolve issues.
+  b. Improving our NOMAD software based on usage patterns.
+  c. Generating aggregated and anonymized reports.
+
+### User management system
+There are two ways to use a user management system:
+1. Central User Management (in central nomad installation)
+2. Personalised User Management System
+The Central User Management by `noamd-lab.eu` is the recommended one. The Central User management system does not communicate with Oasis directly and Oasis can be run without exposing it to the public internet. The user must be able to reach the Oasis after logging into Oasis user will be redirected to the Central User Management Server. After login to the Central Management Server user will be redirected to the Oasis back. Central User Management will help to synchronize the data between the NOMAD installations e.g. Oasis. This Central User Management can be used for data shearing between different users using different Oasis. 
+
+
 
