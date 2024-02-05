@@ -14,8 +14,8 @@ uid=1000(<user>) gid=1000(<user>) groups=1000(<user>),4(adm),24(cdrom),27(sudo),
 Where the docker group is `999`.
 
 ### Hardware considerations
-1. **Storage**: Size of the data files.
-2. **Storage Speed** Processing is designed as a synchronised task.
+1. **Storage**: Depends on the size of the data files.
+2. **Storage Speed** Processing is designed as a synchronized task.
 3. **Compute Resource** Four CPU cores are typically enough for a research group to run application, processing, and database operations in parallel.
-4. **RAM** RAM is used for processing the metadata of individual files. The 2GB per core and at least 8GB are recommended also keep in mind that tools like `jupyter` needs extra RAM and CPU
+4. **RAM** RAM is used for processing the metadata of individual files. The 2GB per core and at least 8GB are recommended also keep in mind that tools like `jupyter` needs extra RAM and CPU.
 
